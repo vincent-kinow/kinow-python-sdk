@@ -1,6 +1,6 @@
 # CartsApi
 
-All URIs are relative to *https://api.kaemo.com/api*
+All URIs are relative to *http://1.0.63/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
