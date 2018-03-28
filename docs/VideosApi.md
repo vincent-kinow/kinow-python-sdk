@@ -845,7 +845,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](#documentation-for-api-endpoints) [[Back to Model list]](#documentation-for-models)
 
 ## **set_video_geolocation**
-> set_video_geolocation(video_id, enabled, behavior_detected_countries, behavior_non_detected_countries, countries=countries, page=page, per_page=per_page)
+> set_video_geolocation(video_id, enabled, behavior_detected_countries, behavior_non_detected_countries, countries=countries)
 
 
 
@@ -866,11 +866,9 @@ enabled = 56 # int | Enabled
 behavior_detected_countries = 'behavior_detected_countries_example' # str | Behavior for detected countries
 behavior_non_detected_countries = 'behavior_non_detected_countries_example' # str | Behavior for non-detected countries
 countries = 'countries_example' # str | IDs of the non-detected countries separated by comma (optional)
-page = 789 # int |  (optional)
-per_page = 789 # int |  (optional)
 
 try: 
-    api_instance.set_video_geolocation(video_id, enabled, behavior_detected_countries, behavior_non_detected_countries, countries=countries, page=page, per_page=per_page)
+    api_instance.set_video_geolocation(video_id, enabled, behavior_detected_countries, behavior_non_detected_countries, countries=countries)
 except ApiException as e:
     print("Exception when calling VideosApi->set_video_geolocation: %s\n" % e)
 ```
@@ -884,8 +882,6 @@ Name | Type | Description  | Notes
  **behavior_detected_countries** | **str**| Behavior for detected countries | 
  **behavior_non_detected_countries** | **str**| Behavior for non-detected countries | 
  **countries** | **str**| IDs of the non-detected countries separated by comma | [optional] 
- **page** | **int**|  | [optional] 
- **per_page** | **int**|  | [optional] 
 
 ### Return type
 
